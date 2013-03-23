@@ -7,4 +7,5 @@ HISTIGNORE="pwd:ls:ll:cd:cd ..:clear"
 
 PS1='\W$(__git_ps1 "\[\033[33m:%s\033[0m\]") '
 
+source ~/.git-prompt.sh
 
