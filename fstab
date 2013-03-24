@@ -1,0 +1,4 @@
+
+
+#/dev/sdb1 /media/Data ntfs-3g quiet,defaults,locale=en_US.utf8,permissions,users,auto,exec 0 0
+/dev/sdb1 /media/Data ntfs-3g defaults,locale=en_US.utf8,exec 0 0
