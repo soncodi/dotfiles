@@ -1,20 +1,22 @@
 {
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+
+  "theme": "Soda Dark.sublime-theme",
+  "soda_classic_tabs": true,
+
   "close_windows_when_empty": true,
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
-	"draw_indent_guides": false,
-	"draw_white_space": "all",
-	"ensure_newline_at_eof_on_save": true,
-	"fade_fold_buttons": false,
-	"font_size": 10,
-	"highlight_modified_tabs": true,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"shift_tab_unindent": true,
-	"tab_size": 2,
-	"translate_tabs_to_spaces": true,
-	"trim_automatic_white_space": false,
-	"trim_trailing_white_space_on_save": true,
-	"use_tab_stops": true
+  "draw_indent_guides": false,
+  "draw_white_space": "all",
+  "ensure_newline_at_eof_on_save": true,
+  "fade_fold_buttons": false,
+  "highlight_modified_tabs": true,
+  "shift_tab_unindent": true,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "trim_automatic_white_space": false,
+  "trim_trailing_white_space_on_save": true,
+  "use_tab_stops": true
 }
