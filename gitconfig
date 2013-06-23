@@ -19,3 +19,5 @@
 [core]
 	autocrlf = input
 	safecrlf = false
+[alias]
+	l = log --graph --all --oneline --decorate
