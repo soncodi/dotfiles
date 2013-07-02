@@ -4,8 +4,7 @@
   { "keys": ["alt+down"], "command": "swap_line_down" },
   { "keys": ["ctrl+shift+r"], "command": "reindent" , "args": {"single_line": false}},
   { "keys": ["ctrl+alt+j"], "command": "join_lines" },
-  
+
   { "keys": ["ctrl+q"], "command": "unbound" },
-  { "keys": ["ctrl+w"], "command": "unbound" },
   { "keys": ["ctrl+j"], "command": "unbound" }
 ]
