@@ -1,3 +1,4 @@
 {
-  "keep_array_indentation": true
+  "keep_array_indentation": true,
+  "brace_style": "end-expand"
 }
