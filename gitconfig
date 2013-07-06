@@ -1,6 +1,6 @@
 [user]
-	email = ""
-	name = "Alex Soncodi"
+	email = 
+	name = Alex Soncodi
 [color]
 	ui = auto
 	diff = auto
@@ -9,6 +9,7 @@
 [diff]
 	tool = p4merge
 [difftool]
+	tool = p4merge
 	prompt = false
 [difftool "p4merge"]
 [merge]
@@ -19,5 +20,9 @@
 [core]
 	autocrlf = input
 	safecrlf = false
+
+[push]
+	default = simple
 [alias]
 	l = log --graph --all --oneline --decorate
+	s = status -sb
