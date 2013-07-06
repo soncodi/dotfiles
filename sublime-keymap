@@ -4,6 +4,20 @@
   { "keys": ["alt+down"], "command": "swap_line_down" },
   { "keys": ["ctrl+shift+r"], "command": "reindent" , "args": {"single_line": false}},
   { "keys": ["ctrl+alt+j"], "command": "join_lines" },
+  { "keys": ["ctrl+shift+keypad_divide"], "command": "fold_all" },
+  { "keys": ["ctrl+keypad_divide"], "command": "unfold_all" },
+  { "keys": ["ctrl+shift+keypad_multiply"], "command": "fold" },
+  { "keys": ["ctrl+keypad_multiply"], "command": "unfold" },
+  { "keys": ["ctrl+shift+t"], "command": "open_recent_file", "args": {"index" : 0} },
+
+  { "keys": ["alt+h"], "command": "move", "args": {"by": "characters", "forward": false} },
+  { "keys": ["alt+l"], "command": "move", "args": {"by": "characters", "forward": true} },
+  { "keys": ["alt+k"], "command": "move", "args": {"by": "lines", "forward": false} },
+  { "keys": ["alt+j"], "command": "move", "args": {"by": "lines", "forward": true} },
+  { "keys": ["shift+alt+h"], "command": "move", "args": {"by": "characters", "forward": false, "extend": true} },
+  { "keys": ["shift+alt+l"], "command": "move", "args": {"by": "characters", "forward": true, "extend": true} },
+  { "keys": ["shift+alt+k"], "command": "move", "args": {"by": "lines", "forward": false, "extend": true} },
+  { "keys": ["shift+alt+j"], "command": "move", "args": {"by": "lines", "forward": true, "extend": true} },
 
   { "keys": ["ctrl+q"], "command": "unbound" },
   { "keys": ["ctrl+j"], "command": "unbound" }
