@@ -26,3 +26,4 @@
 [alias]
 	l = log --graph --all --oneline --decorate
 	s = status -sb
+	d = difftool -y
