@@ -4,7 +4,7 @@
 
   "csslint_options":
   {
-    "adjoining-classes": "warning",
+    "adjoining-classes": false,
     "box-model": false,
     "box-sizing": false,
     "compatible-vendor-prefixes": "warning",
