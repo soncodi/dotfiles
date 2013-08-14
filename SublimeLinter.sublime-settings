@@ -2,6 +2,25 @@
   "sublimelinter_mark_style": "outline",
   "sublimelinter_gutter_marks": true,
 
+  "jshint_options":
+  {
+    "camelcase": true,
+    "indent": 2,
+    "noempty": true,
+    "quotmark": "single",
+    "undef": true,
+    "unused": "vars",
+    "strict": true,
+    "trailing": true,
+    "maxlen": 80,
+
+    "eqnull": true,
+    "funcscope": false,
+    "globalstrict": false,
+    "loopfunc": false,
+    "moz": true
+  },
+
   "csslint_options":
   {
     "adjoining-classes": false,
@@ -20,7 +39,7 @@
     "gradients": "warning",
     "ids": false,
     "import": "warning",
-    "important": "warning",
+    "important": false,
     "known-properties": true,
     "outline-none": "warning",
     "overqualified-elements": false,
