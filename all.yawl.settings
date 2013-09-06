@@ -1,5 +1,6 @@
 [addons>attention]
 icons-attention-blink	b	+
+icons-attention-blink-rate	s	39
 
 [addons>preview]
 windows-preview	b	+
@@ -29,8 +30,8 @@ icons-distance	s	100
 [icons>animation]
 icons-animation-time	s	0
 icons-animation-effect	s	1
-icons-hover-animation	b	+
-icons-hover-size	s	110
+icons-hover-animation	b	-
+icons-hover-size	s	100
 icons-hover-opacity	s	100
 icons-hover-fit	b	+
 icons-hover-animation-time	s	0
@@ -46,6 +47,7 @@ mouse-app-middle	s	9
 mouse-app-middle-ctrl	s	9
 mouse-app-middle-shift	s	7
 mouse-app-middle-ctrl-shift	s	3
+mouse-scroll-workspace	b	+
 mouse-app-scroll	s	4
 mouse-app-right	s	10
 mouse-window-left	s	1
@@ -96,6 +98,7 @@ windows-hover-animation-effect	s	3
 
 [thumbnails>panel]
 windows-show	b	+
+windows-show-interesting	b	-
 windows-indicator-arrow	b	-
 windows-theming	b	+
 windows-background-panel	b	+
@@ -103,8 +106,8 @@ windows-background-color	s	#2e3436
 windows-background-opacity	s	75
 windows-text-color	s	white
 windows-text-size	s	9
-windows-padding	s	11
 windows-border-color	s	#d3d7cf
 windows-border-width	s	1
 windows-border-radius	s	0
+windows-padding	s	11
 
