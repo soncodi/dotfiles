@@ -24,6 +24,6 @@
 [push]
 	default = simple
 [alias]
-	l = log --graph --all --oneline --decorate
+	l = log --color --graph --all --oneline --decorate
 	s = status -sb
 	d = difftool -y
