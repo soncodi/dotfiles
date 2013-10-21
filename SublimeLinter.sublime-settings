@@ -9,7 +9,7 @@
     "noempty": true,
     "quotmark": "single",
     "undef": true,
-    "unused": "vars",
+    "unused": "strict",
     "strict": true,
     "trailing": true,
     "maxlen": 80,
