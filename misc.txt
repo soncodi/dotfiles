@@ -1,0 +1,3 @@
+
+# disable window animations, 13.10
+gsettings set org.gnome.desktop.interface enable-animations false
