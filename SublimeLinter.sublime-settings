@@ -1,24 +1,41 @@
 {
   "sublimelinter_mark_style": "outline",
-  "sublimelinter_gutter_marks": true,
+  "sublimelinter_gutter_marks": false,
 
   "jshint_options":
   {
     "camelcase": true,
-    "indent": 2,
+    "indent": false,
     "noempty": true,
     "quotmark": "single",
     "undef": true,
     "unused": "strict",
-    "strict": true,
+    "strict": false,
     "trailing": true,
-    "maxlen": 80,
+    "maxlen": false,
 
     "eqnull": true,
     "funcscope": false,
     "globalstrict": false,
     "loopfunc": false,
-    "moz": true
+    "moz": true,
+
+    "browser": true,
+    "devel": true,
+    "node": true,
+
+    "globals": {
+      "angular": false,
+      "Highcharts": false,
+      "IScroll": false,
+      "google": false,
+      "describe": false,
+      "it": false,
+      "before": false,
+      "beforeEach": false,
+      "after": false,
+      "afterEach": false
+    }
   },
 
   "csslint_options":
