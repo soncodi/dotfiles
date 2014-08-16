@@ -11,3 +11,8 @@ puttygen id_rsa -O private -o id_rsa.ppk
 sudo vi /etc/default/keyboard
 XKBOPTIONS="ctrl:nocaps"
 sudo dpkg-reconfigure keyboard-configuration
+
+
+# bt manual start
+sudo pactl load-module module-bluetooth-discover
+
