@@ -1,8 +1,0 @@
-
-// add wine ppa
-apt-get install smbios-utils
-getSystemId
-biosfile.exe –writehdrfile
-modprobe dell_rbu
-dellBiosUpdate –u –f headerfile.hdr --reboot
-apt-get purge smbios-utils
