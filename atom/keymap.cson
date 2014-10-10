@@ -1,0 +1,4 @@
+'.platform-linux .editor':
+  'ctrl-d': 'editor:delete-line'
+  'alt-up': 'editor:move-line-up'
+  'alt-down': 'editor:move-line-down'

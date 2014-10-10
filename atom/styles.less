@@ -1,0 +1,42 @@
+
+.tree-view.full-menu.focusable-panel {
+  background-color: transparent;
+}
+
+.editor {
+  font-family: 'Ubuntu Mono', monospace;
+
+  &.is-focused {
+    .line.cursor-line {
+      background-color: transparent;
+    }
+
+    // ST-style cursor
+    .cursor {
+      transition: opacity 0.5s;
+      &.blink-off {
+        visibility: visible;
+        opacity: 0;
+      }
+    }
+  }
+
+  .bracket-matcher {
+    border: 1px solid #ffffff;
+  }
+}
+
+// linter jshint
+.tool-panel.panel-bottom.padded {
+  padding: 5px;
+}
+.editor .linter-warning {
+  &.highlight .region {
+    background: transparent;
+    border: 1px solid yellow;
+  }
+}
+
+.tab-bar .tab.modified:not(:hover) .close-icon {
+  border: 4px solid #fbb561;
+}

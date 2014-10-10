@@ -1,0 +1,30 @@
+'exception-reporting':
+  'userId': '182f70ab-2489-f653-64a2-5410661f622f'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': '5afe01d925f56ca54ea8945b2cce677f8755be3a'
+'core':
+  'themes': [
+    'atom-dark-ui'
+    'monokai-ubuntu'
+  ]
+'editor':
+  'softWrapAtPreferredLineLength': true
+  'showIndentGuide': true
+  'invisibles': {}
+'whitespace':
+  'ignoreWhitespaceOnCurrentLine': false
+'jsformat':
+  'brace_style': 'end-expand'
+  'format_on_save': false
+  'keep_array_indentation': true
+  'keep_function_indentation': true
+  'max_preserve_newlines': 2
+'atom-beautify':
+  '_analyticsUserId': 'b1322046-095f-4baf-9699-d94be5ba25eb'
+  'analytics': false
+  'beautifyEntireFileOnSave': false
+  'js_brace_style': 'end-expand'
+'git-diff':
+  'showIconsInEditorGutter': true
