@@ -16,6 +16,9 @@ sudo dpkg-reconfigure keyboard-configuration
 # bt manual start
 sudo pactl load-module module-bluetooth-discover
 
+# add missing firmware
+sudo apt-get install b43-fwcutter firmware-b43-installer
+
 
 // bios
 apt-get install smbios-utils
