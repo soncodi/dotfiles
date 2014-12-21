@@ -4,13 +4,7 @@
 }
 
 .editor {
-  font-family: 'Ubuntu Mono', monospace;
-
   &.is-focused {
-    .line.cursor-line {
-      background-color: transparent;
-    }
-
     // ST-style cursor
     .cursor {
       transition: opacity 0.5s;
@@ -48,3 +42,10 @@
 .panes > .pane-row > atom-pane:last-child {
   flex-grow: 0.65;
 }
+
+.vertical-scrollbar {
+  display: none;
+}
+// .with-minimap atom-text-editor::shadow .vertical-scrollbar {
+//   display: none;
+// }
