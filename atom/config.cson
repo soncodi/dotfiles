@@ -11,12 +11,13 @@
       'monokai-ubuntu'
     ]
   'editor':
-    'invisibles': {}
     'showIndentGuide': true
     'useShadowDOM': true
     'lineHeight': 1.15
     'scrollPastEnd': true
     'softWrap': true
+    'invisibles': {}
+    'fontFamily': '\'Ubuntu Mono\', monospace'
   'whitespace':
     'ignoreWhitespaceOnCurrentLine': false
   'git-diff':
