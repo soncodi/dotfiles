@@ -13,6 +13,9 @@
   'editor':
     'invisibles': {}
     'showIndentGuide': true
+    'useShadowDOM': true
+    'lineHeight': 1.15
+    'scrollPastEnd': true
   'whitespace':
     'ignoreWhitespaceOnCurrentLine': false
   'git-diff':
@@ -22,3 +25,4 @@
     'beautifyEntireFileOnSave': false
     'html_brace_style': 'end-expand'
     'js_brace_style': 'end-expand'
+  'linter': {}
