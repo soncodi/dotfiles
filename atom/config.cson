@@ -12,12 +12,11 @@
     ]
   'editor':
     'showIndentGuide': true
-    'useShadowDOM': true
     'lineHeight': 1.15
     'scrollPastEnd': true
     'softWrap': true
-    'invisibles': {}
     'fontFamily': '\'Ubuntu Mono\', monospace'
+    'invisibles': {}
   'whitespace':
     'ignoreWhitespaceOnCurrentLine': false
   'git-diff':
