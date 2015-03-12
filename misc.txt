@@ -6,10 +6,17 @@ gsettings set org.gnome.desktop.interface enable-animations false
 
 # convert ppk
 puttygen id_rsa -O private -o id_rsa.ppk
+
 # convert crt => pem
 openssl x509 -in bundle.crt -out bundle.pem -outform PEM
 
-# caps=>ctrl in terminal
+# cert order
+cat domain_com.crt \
+COMODORSADomainValidationSecureServerCA.crt \
+COMODORSAAddTrustCA.crt \
+AddTrustExternalCARoot.crt > domain.crt
+
+# caps => ctrl in terminal
 sudo vi /etc/default/keyboard
 XKBOPTIONS="ctrl:nocaps"
 sudo dpkg-reconfigure keyboard-configuration
