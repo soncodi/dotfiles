@@ -1,7 +1,7 @@
 # byobu-config
-sudo apt-get install python-newt
+# sudo apt-get install python-newt
 
-# disable window animations, 13.10
+# disable window animations
 gsettings set org.gnome.desktop.interface enable-animations false
 
 # convert ppk
@@ -17,22 +17,22 @@ COMODORSAAddTrustCA.crt \
 AddTrustExternalCARoot.crt > domain.crt
 
 # caps => ctrl in terminal
-sudo vi /etc/default/keyboard
-XKBOPTIONS="ctrl:nocaps"
-sudo dpkg-reconfigure keyboard-configuration
+# sudo vi /etc/default/keyboard
+# XKBOPTIONS="ctrl:nocaps"
+# sudo dpkg-reconfigure keyboard-configuration
 
 
 # bt manual start
-sudo pactl load-module module-bluetooth-discover
+# sudo pactl load-module module-bluetooth-discover
 
 # add missing firmware
-sudo apt-get install b43-fwcutter firmware-b43-installer
+# sudo apt-get install b43-fwcutter firmware-b43-installer
 
 
-// bios
-apt-get install smbios-utils
-getSystemId
-biosfile.exe –writehdrfile
-modprobe dell_rbu
-dellBiosUpdate –u –f headerfile.hdr --reboot
-apt-get purge smbios-utils
+# bios
+# apt-get install smbios-utils
+# getSystemId
+# biosfile.exe –writehdrfile
+# modprobe dell_rbu
+# dellBiosUpdate –u –f headerfile.hdr --reboot
+# apt-get purge smbios-utils
