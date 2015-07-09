@@ -21,3 +21,10 @@ man() {
   LESS_TERMCAP_us=$(printf "\e[1;32m") \
   man "$@"
 }
+
+
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
+
+
