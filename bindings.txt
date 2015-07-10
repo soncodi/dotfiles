@@ -11,9 +11,10 @@ karabiner
   delete key
     command + delete to option_l + delete
   tab key
-    opt+tab as switch app (cmd+tab)
-    swap cmd+tab and ctr+tab
+    opt+tab as switch app (command+tab)
+    swap command+tab and ctrl+tab
 iterm2
+  left option => left command
   right command => ctrl
   ctrl + F2 => send [1;5Q
 usb overdrive
