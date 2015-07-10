@@ -1,29 +1,30 @@
-[user]
-	email = 
-	name = Alex Soncodi
-[color]
-	ui = auto
-	diff = auto
-	status = auto
-	branch = auto
+
 [diff]
-	tool = p4merge
+  tool = p4m
 [difftool]
-	tool = p4merge
-	prompt = false
-[difftool "p4merge"]
+  prompt = false
+[difftool "p4m"]
+  #cmd = /opt/homebrew-cask/Caskroom/p4merge/2014.3-1007540/p4merge.app/Contents/Resources/launchp4merge "$LOCAL" "$BASE"
+  trustExitCode = false
+
 [merge]
-	tool = p4merge
-[mergetool "p4merge"]
-	trustExitCode = true
-	keepBackup = false
+  tool = p4m
+[mergetool]
+  prompt = false
+[mergetool "p4m"]
+  #cmd = /opt/homebrew-cask/Caskroom/p4merge/2014.3-1007540/p4merge.app/Contents/Resources/launchp4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+  keepTemporaries = false
+  trustExitCode = false
+  keepBackup = false
+
 [core]
-	autocrlf = input
-	safecrlf = false
+  autocrlf = input
+  safecrlf = false
 
 [push]
-	default = simple
+  default = simple
+
 [alias]
-	l = log --color --graph --all --oneline --decorate
-	s = status -sb
-	d = difftool -y
+  l = log --color --graph --all --oneline --decorate
+  s = status -sb
+  d = difftool -y
