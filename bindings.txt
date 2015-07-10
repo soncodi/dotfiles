@@ -15,6 +15,7 @@ karabiner
     swap cmd+tab and ctr+tab
 iterm2
   right command => ctrl
+  ctrl + F2 => send [1;5Q
 usb overdrive
   mouse 4 => keybinding back
   mouse 5 => keybinding forward
