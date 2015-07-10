@@ -4,6 +4,7 @@ seil
   caps => command_R 54
 karabiner
   command-left/right arrow to option-left/right arrow
+  option+arrow to command_l + arrow
   command_l to opt_l (pass-through c/tab)
   command + delete to option_l + delete
   opt+tab as switch app (cmd+tab)
