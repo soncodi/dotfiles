@@ -16,6 +16,5 @@
     ":-leftSpace": true
   "atom-beautify":
     js_brace_style: "end-expand"
-  minimap: {}
   linter:
     showErrorTabLine: true
