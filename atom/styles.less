@@ -1,51 +1,11 @@
 
-.tree-view.full-menu.focusable-panel {
+.tree-view.full-menu {
   background-color: transparent;
 }
 
-.editor {
-  &.is-focused {
-    // ST-style cursor
-    .cursor {
-      transition: opacity 0.5s;
-      &.blink-off {
-        visibility: visible;
-        opacity: 0;
-      }
-    }
-  }
-
-  .region.bracket-matcher {
-    border-bottom: 2px solid #fff;
+atom-text-editor,
+atom-text-editor::shadow {
+  .vertical-scrollbar {
+    display: none;
   }
 }
-
-// linter jshint
-.tool-panel.panel-bottom.padded {
-  padding: 5px;
-}
-.editor .linter-warning {
-  &.highlight .region {
-    background: transparent;
-    border: 1px solid yellow;
-  }
-}
-
-.tab-bar .tab.modified:not(:hover) .close-icon {
-  border: 4px solid #fbb561;
-}
-
-// https://discuss.atom.io/t/adjustable-size-split-panes/1397
-.pane-column.vertical {
-  flex-grow: 0.65;
-}
-.panes > .pane-row > atom-pane:last-child {
-  flex-grow: 0.65;
-}
-
-.vertical-scrollbar {
-  display: none;
-}
-// .with-minimap atom-text-editor::shadow .vertical-scrollbar {
-//   display: none;
-// }
