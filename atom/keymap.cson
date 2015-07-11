@@ -1,9 +1,13 @@
 '.platform-linux atom-text-editor':
-  'ctrl-d': 'editor:delete-line'
-  'alt-up': 'editor:move-line-up'
-  'alt-down': 'editor:move-line-down'
+  'ctrl-d'      : 'editor:delete-line'
+  'alt-up'      : 'editor:move-line-up'
+  'alt-down'    : 'editor:move-line-down'
+  'alt-shift-2' : 'pane:split-right'
+  'ctrl-h'      : 'aligner:align'
 
 '.platform-darwin atom-text-editor':
-  'cmd-d': 'editor:delete-line'
-  'cmd-up': 'editor:move-line-up'     # with karabiner binding
-  'cmd-down': 'editor:move-line-down' # with karabiner binding
+  'cmd-d'       : 'editor:delete-line'
+  'cmd-up'      : 'editor:move-line-up'
+  'cmd-down'    : 'editor:move-line-down'
+  'cmd-shift-2' : 'pane:split-right'
+  'cmd-h'       : 'aligner:align'
