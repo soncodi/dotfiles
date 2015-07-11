@@ -3,6 +3,8 @@
     lineHeight: 1.1
     scrollPastEnd: true
     showIndentGuide: true
+  "tree-view":
+    hideIgnoredNames: true
   core:
     themes: [
       "atom-dark-ui"
@@ -18,3 +20,9 @@
     js_brace_style: "end-expand"
   linter:
     showErrorTabLine: true
+  minimap:
+    plugins:
+      linter: true
+      "highlight-selected": true
+  welcome:
+    showOnStartup: false
