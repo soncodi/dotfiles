@@ -1,29 +1,21 @@
-'global':
-  'exception-reporting':
-    'userId': 'a508eef9-c95c-127d-e482-a8692e7f0614'
-  'welcome':
-    'showOnStartup': false
-  'metrics':
-    'userId': '5afe01d925f56ca54ea8945b2cce677f8755be3a'
-  'core':
-    'themes': [
-      'atom-dark-ui'
-      'monokai-ubuntu'
+"*":
+  editor:
+    lineHeight: 1.1
+    scrollPastEnd: true
+    showIndentGuide: true
+  core:
+    themes: [
+      "atom-dark-ui"
+      "monokai"
     ]
-  'editor':
-    'showIndentGuide': true
-    'lineHeight': 1.15
-    'scrollPastEnd': true
-    'softWrap': true
-    'fontFamily': '\'Ubuntu Mono\', monospace'
-    'invisibles': {}
-  'whitespace':
-    'ignoreWhitespaceOnCurrentLine': false
-  'git-diff':
-    'showIconsInEditorGutter': true
-  'atom-beautify':
-    'analytics': false
-    'beautifyEntireFileOnSave': false
-    'html_brace_style': 'end-expand'
-    'js_brace_style': 'end-expand'
-  'linter': {}
+  whitespace:
+    ensureSingleTrailingNewline: false
+    ignoreWhitespaceOnCurrentLine: false
+  aligner:
+    ":-alignment": "left"
+    ":-leftSpace": true
+  "atom-beautify":
+    js_brace_style: "end-expand"
+  minimap: {}
+  linter:
+    showErrorTabLine: true
