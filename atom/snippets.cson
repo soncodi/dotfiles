@@ -1,0 +1,5 @@
+
+'.source.js':
+  'Anonymous Function':
+    'prefix': 'f'
+    'body': 'function($1) {\n\t$2\n}'
