@@ -1,14 +1,11 @@
-# byobu-config
-# sudo apt-get install python-newt
-
 # disable window animations
 gsettings set org.gnome.desktop.interface enable-animations false
 
-# convert ppk
+# ppk
 puttygen key.pem -o key.ppk -O private
 puttygen key.pem -o key.pub -O public
 
-# convert crt => pem
+# pem
 openssl x509 -in bundle.crt -out bundle.pem -outform PEM
 
 # cert order
@@ -22,18 +19,8 @@ AddTrustExternalCARoot.crt > domain.crt
 # XKBOPTIONS="ctrl:nocaps"
 # sudo dpkg-reconfigure keyboard-configuration
 
-
-# bt manual start
-# sudo pactl load-module module-bluetooth-discover
-
-# add missing firmware
+# rpi add missing firmware
 # sudo apt-get install b43-fwcutter firmware-b43-installer
 
-
-# bios
-# apt-get install smbios-utils
-# getSystemId
-# biosfile.exe –writehdrfile
-# modprobe dell_rbu
-# dellBiosUpdate –u –f headerfile.hdr --reboot
-# apt-get purge smbios-utils
+# unzip install
+tar -C /usr/local --strip-components 1 -xvf bundle.tar.gz
