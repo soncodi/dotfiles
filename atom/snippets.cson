@@ -1,5 +1,9 @@
 
 '.source.js':
-  'Anonymous Function':
+  'Arrow Func':
     'prefix': 'f'
-    'body': 'function($1) {\n\t$2\n}'
+    'body': '($1) => {$2}'
+
+  'Promise':
+    'prefix': 'p'
+    'body': 'new Promise((resolve${1:, reject}) => {$2})'
