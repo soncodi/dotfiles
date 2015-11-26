@@ -1,0 +1,9 @@
+{
+  "Quick Function": {
+    "prefix": "fn",
+    "body": [
+      "($1) => {$2}"
+    ],
+    "description": "Quick function"
+  }
+}

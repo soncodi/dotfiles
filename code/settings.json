@@ -23,5 +23,7 @@
     "**/jspm_packages": true
   },
 
+  "javascript.validate.enable": false,
+
   "telemetry.enableCrashReporter": false
 }
