@@ -24,3 +24,6 @@ AddTrustExternalCARoot.crt > domain.crt
 
 # unzip install
 tar -C /usr/local --strip-components 1 -xvf bundle.tar.gz
+
+# nvm default
+nvm alias default node
