@@ -27,3 +27,17 @@ tar -C /usr/local --strip-components 1 -xvf bundle.tar.gz
 
 # nvm default
 nvm alias default node
+
+# watches and limits
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+# /etc/security/limits.conf
+* soft nofile 9000
+* hard nofile 65000
+
+root soft nofile 9000
+root hard nofile 65000
+
+# /etc/pam.d/common-session
+# /etc/pam.d/common-session-noninteractive
+session required pam_limits.so
