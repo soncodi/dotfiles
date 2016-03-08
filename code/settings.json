@@ -1,10 +1,10 @@
 {
-  "editor.lineHeight": 18,
   "editor.fontSize": 15,
+  "editor.lineHeight": 18,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.roundedSelection": false,
-  "editor.wrappingColumn": 80,
+  "editor.wrappingColumn": 0,
   "editor.wrappingIndent": "indent",
   "editor.renderWhitespace": true,
 
@@ -23,7 +23,6 @@
     "**/jspm_packages": true
   },
 
-  "javascript.validate.enable": false,
-
+  "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false
 }
