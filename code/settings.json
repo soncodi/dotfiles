@@ -1,10 +1,11 @@
 {
   "editor.fontSize": 15,
   "editor.lineHeight": 18,
+  "editor.rulers": [80],
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.roundedSelection": false,
-  "editor.wrappingColumn": 0,
+  "editor.wrappingColumn": 300,
   "editor.wrappingIndent": "indent",
   "editor.renderWhitespace": true,
 
