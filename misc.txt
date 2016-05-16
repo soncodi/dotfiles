@@ -1,6 +1,9 @@
 # disable window animations
 gsettings set org.gnome.desktop.interface enable-animations false
 
+# GNOME icons right
+dconf write /org/gnome/desktop/wm/preferences/button-layout "':minimize,maximize,close'"
+
 # ppk
 puttygen key.pem -o key.ppk -O private
 puttygen key.pem -o key.pub -O public
