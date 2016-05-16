@@ -1,46 +1,22 @@
-#!/bin/sh
+#!/bin/bash
 
-PROJ="/media/Data/Projects"
+PROJ="/home/alex/projects"
 
 # 1
-tmux send-keys "cd $PROJ/proj1" C-m
 tmux rename-window ""
-tmux splitw -h
-tmux send-keys "mongo p1" C-m
-
-tmux selectp -t 0
+tmux send-keys -t 0.0 "cd $PROJ/p1" C-m C-l
+tmux split -t 0.0 -h -c "$PROJ/p1"
+tmux send-keys -t 0.1 "mongo p1" C-m
 
 # 2
-tmux neww -n "" -c "$PROJ/proj2"
-tmux select-window -t 1
-
-tmux selectp -t 0
-tmux splitw -h -c "$PROJ/proj2/src/assets/www"
-tmux send-keys "python -m SimpleHTTPServer 8000"
-
-tmux selectp -t 1
-tmux splitw -c "$PROJ/proj3"
-
-tmux selectp -t 0
+tmux neww -n "" -c "$PROJ/p2"
+tmux splitw -t 1.0 -h -c "$PROJ/p2"
+tmux send-keys -t 1.1 "gulp" C-m
 
 # 3
-tmux neww -n "" -c "$PROJ/proj4"
-tmux select-window -t 2
+tmux neww -n "" -c "$PROJ/p3"
+tmux splitw -t 2.0 -h -c "$PROJ/p3"
+tmux send-keys -t 2.1 "gulp" C-m
 
-tmux selectp -t 0
-tmux splitw -h
-tmux send-keys "mongo p4" C-m
-
-tmux selectp -t 1
-tmux splitw -c "$PROJ/proj4"
-tmux send-keys "./run.sh"
-
-tmux selectp -t 0
-
-# 4
-tmux neww -n "" -c "$PROJ/proj5"
-tmux select-window -t 3
-tmux splitw -h -c "$PROJ/proj5"
-tmux send-keys "python -m SimpleHTTPServer 8080"
-
-tmux selectp -t 0
+tmux select-window -t 0
+tmux select-pane -t 0
