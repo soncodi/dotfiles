@@ -1,5 +1,9 @@
 
 '.source.js':
+  'Log Console':
+    'prefix': 'l'
+    'body': 'console.log($1);$2'
+
   'Arrow Func':
     'prefix': 'f'
     'body': '($1) => {$2}'
