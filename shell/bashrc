@@ -1,16 +1,10 @@
 
-HISTCONTROL=ignoredups:ignorespace:erasedups
-HISTIGNORE="pwd:ls:ll:cd:cd .."
+# HISTCONTROL=ignoredups:ignorespace:erasedups
+# HISTIGNORE="pwd:ls:ll:cd:cd .."
 
 PS1='\033[1;37m\W\033[0m$(__git_ps1 "|\033[0;33m%s\033[0m") '
 
-PATH=$PATH:~/android-sdk/tools
-PATH=$PATH:~/android-sdk/platform-tools
-
-# gsettings set org.gnome.desktop.interface enable-animations false
+# PATH=$PATH:~/android-sdk/tools
+# PATH=$PATH:~/android-sdk/platform-tools
 
 alias ll='ls -alh'
-
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
