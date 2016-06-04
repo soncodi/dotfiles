@@ -1,6 +1,7 @@
 {
-  "editor.fontSize": 15,
-  "editor.lineHeight": 18,
+  "editor.fontFamily": "Ubuntu Mono",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 17,
   "editor.rulers": [80],
   "editor.tabSize": 2,
   "editor.insertSpaces": true,

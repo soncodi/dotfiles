@@ -5,21 +5,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "alt+down",
-    "command": "editor.action.moveLinesDownAction",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+up",
-    "command": "editor.action.moveLinesUpAction",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+k ctrl+1",
-    "command": "editor.foldAll",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+k ctrl+0",
     "command": "editor.unfoldAll",
     "when": "editorTextFocus"
