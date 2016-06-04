@@ -1,7 +1,6 @@
 set number
 set hlsearch
 set ignorecase
-set autoindent
 set tabstop=2
 set shiftwidth=2
 set expandtab

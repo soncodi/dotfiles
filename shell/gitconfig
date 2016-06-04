@@ -4,18 +4,18 @@
 [difftool]
   prompt = false
 [difftool "p4merge"]
-  #cmd = /opt/homebrew-cask/Caskroom/p4merge/2014.3-1007540/p4merge.app/Contents/Resources/launchp4merge "$LOCAL" "$BASE"
   trustExitCode = false
+  #cmd = /opt/homebrew-cask/Caskroom/p4merge/2014.3-1007540/p4merge.app/Contents/Resources/launchp4merge "$LOCAL" "$BASE"
 
 [merge]
   tool = p4merge
 [mergetool]
   prompt = false
 [mergetool "p4merge"]
-  #cmd = /opt/homebrew-cask/Caskroom/p4merge/2014.3-1007540/p4merge.app/Contents/Resources/launchp4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
   keepTemporaries = false
   trustExitCode = false
   keepBackup = false
+  #cmd = /opt/homebrew-cask/Caskroom/p4merge/2014.3-1007540/p4merge.app/Contents/Resources/launchp4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
 
 [core]
   autocrlf = input
