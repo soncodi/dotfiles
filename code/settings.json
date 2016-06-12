@@ -12,17 +12,14 @@
 
   "files.exclude": {
     "**/.git": true,
-    "**/.DS_Store": true,
-    "**/node_modules": true,
-    "**/jspm_packages": true
+    "**/node_modules": true
   },
 
   "files.trimTrailingWhitespace": true,
 
   "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/jspm_packages": true
+    "**/.git": true,
+    "**/node_modules": true
   },
 
   "telemetry.enableTelemetry": false,
