@@ -1,0 +1,25 @@
+{
+  "Lambda": {
+    "prefix": "f",
+    "body": [
+      "($1) => {$2}"
+    ],
+    "description": "Lambda function"
+  },
+
+  "ConsoleLog": {
+    "prefix": "l",
+    "body": [
+      "console.log($1);$2"
+    ],
+    "description": "Console log"
+  },
+
+	"Promise": {
+    "prefix": "p",
+    "body": [
+      "new Promise((resolve, ${1:reject}) => {\n  $2\n})"
+    ],
+    "description": "Promise wrap"
+  }
+}
