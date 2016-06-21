@@ -8,5 +8,13 @@
     "key": "ctrl+k ctrl+0",
     "command": "editor.unfoldAll",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor"
   }
 ]
