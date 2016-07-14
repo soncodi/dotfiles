@@ -1,5 +1,4 @@
 
-# disable window animations
 # gsettings set org.gnome.desktop.interface enable-animations false
 gsettings set org.gnome.desktop.peripherals.keyboard delay 250
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 10
@@ -24,7 +23,8 @@ root hard nofile 65000
 # session required pam_limits.so
 
 # inc watches
-# echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+cat /proc/sys/fs/inotify/max_user_watches
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
 
 
