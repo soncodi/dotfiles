@@ -8,18 +8,23 @@
   "editor.roundedSelection": false,
   "editor.wrappingColumn": 300,
   "editor.wrappingIndent": "indent",
+  "editor.snippetSuggestions": "top",
+  "editor.mouseWheelZoom": true,
   "editor.renderWhitespace": true,
+  "editor.renderIndentGuides": true,
 
   "files.exclude": {
     "**/.git": true,
-    "**/node_modules": true
+    "**/node_modules": true,
+    "**/jspm_packages": true
   },
 
   "files.trimTrailingWhitespace": true,
 
   "search.exclude": {
     "**/.git": true,
-    "**/node_modules": true
+    "**/node_modules": true,
+    "**/jspm_packages": true
   },
 
   "telemetry.enableTelemetry": false,
