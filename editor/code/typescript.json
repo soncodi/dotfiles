@@ -2,7 +2,7 @@
   "Lambda": {
     "prefix": "f",
     "body": [
-      "($1) => {$2}"
+      "(${...args}) => {$0}"
     ],
     "description": "Lambda function"
   },
@@ -10,7 +10,7 @@
   "ConsoleLog": {
     "prefix": "l",
     "body": [
-      "console.log($1);$2"
+      "console.log($1);$0"
     ],
     "description": "Console log"
   },
@@ -18,7 +18,9 @@
 	"Promise": {
     "prefix": "p",
     "body": [
-      "new Promise((resolve, ${1:reject}) => {\n  $2\n})"
+      "new Promise((resolve, ${1:reject}) => {",
+      "  $2",
+      "})$0"
     ],
     "description": "Promise wrap"
   }

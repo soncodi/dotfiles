@@ -10,7 +10,7 @@
   "editor.wrappingIndent": "indent",
   "editor.snippetSuggestions": "top",
   "editor.mouseWheelZoom": true,
-  "editor.renderWhitespace": true,
+  "editor.renderWhitespace": "boundary",
   "editor.renderIndentGuides": true,
 
   "files.exclude": {
@@ -31,5 +31,8 @@
   "telemetry.enableCrashReporter": false,
 
   "workbench.editor.showTabs": true,
-  "explorer.openEditors.visible": 0
+  "explorer.openEditors.visible": 0,
+  "window.zoomLevel": 0,
+  "workbench.activityBar.visible": true,
+  "workbench.editor.showTabCloseButton": false
 }
