@@ -1,23 +1,15 @@
 
+system preferences
+  caps => cmd
+  opt => cmd
+  cmd => opt
 
-seil
-  caps => command_R 54
-karabiner
-  arrow keys
-    command-left/right arrow to option-left/right arrow
-    option+arrow to command_l + arrow
-  command_l key
-    command_l to opt_l (pass-through c/tab)
-  delete key
-    command + delete to option_l + delete
-  tab key
-    opt+tab as switch app (command+tab)
-    swap command+tab and ctrl+tab    
-  key repeat 200/30
 iterm2
-  left option => left command
-  right command => ctrl
-  ctrl + F2 => send [1;5Q
+  left cmd => ctrl
+
+karabiner elements
+  n/a
+
 usb overdrive
   mouse 4 => keybinding back
   mouse 5 => keybinding forward
