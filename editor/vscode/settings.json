@@ -6,12 +6,18 @@
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.roundedSelection": false,
-  "editor.wrappingColumn": 300,
+  "editor.wordWrapColumn": 300,
   "editor.wrappingIndent": "indent",
   "editor.snippetSuggestions": "top",
   "editor.mouseWheelZoom": true,
   "editor.renderWhitespace": "boundary",
   "editor.renderIndentGuides": true,
+
+  "editor.minimap.enabled": true,
+  "editor.minimap.maxColumn": 120,
+  "editor.minimap.renderCharacters": false,
+
+  "explorer.openEditors.visible": 0,
 
   "files.exclude": {
     "**/.git": true,
@@ -30,9 +36,13 @@
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
 
-  "workbench.editor.showTabs": true,
-  "explorer.openEditors.visible": 0,
   "window.zoomLevel": 0,
+  "window.menuBarVisibility": "toggle",
+
   "workbench.activityBar.visible": true,
-  "workbench.editor.showTabCloseButton": false
+  "workbench.colorTheme": "Monokai",
+  "workbench.editor.showTabs": true,
+  "workbench.editor.tabCloseButton": "off",
+  "workbench.statusBar.visible": true,
+  "workbench.welcome.enabled": false
 }

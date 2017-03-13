@@ -1,6 +1,6 @@
 
 # gsettings set org.gnome.desktop.interface enable-animations false
-gsettings set org.gnome.desktop.peripherals.keyboard delay 250
+gsettings set org.gnome.desktop.peripherals.keyboard delay 275
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 10
 
 # GNOME icons right
@@ -14,7 +14,6 @@ sudo dpkg-reconfigure keyboard-configuration
 # /etc/security/limits.conf
 * soft nofile 9000
 * hard nofile 65000
-
 root soft nofile 9000
 root hard nofile 65000
 
@@ -25,9 +24,6 @@ root hard nofile 65000
 # inc watches
 cat /proc/sys/fs/inotify/max_user_watches
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-
-
-
 
 # ppk
 puttygen key.pem -o key.ppk -O private
@@ -41,6 +37,3 @@ cat domain_com.crt \
 COMODORSADomainValidationSecureServerCA.crt \
 COMODORSAAddTrustCA.crt \
 AddTrustExternalCARoot.crt > domain.crt
-
-# unzip install
-# tar -C /usr/local --strip-components 1 -xvf bundle.tar.gz
