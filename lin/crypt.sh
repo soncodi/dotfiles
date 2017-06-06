@@ -28,7 +28,7 @@ elif [[ "$1" == "off" ]]; then
   rmdir "$folder" --ignore-fail-on-non-empty
 elif [[ $1 == "make" && "$2" -gt 0 ]]; then
   dd if=/dev/urandom of="$fs" bs=1M count="$2"
-  cryptsetup luksFormat --cipher aes-xts-plain64 "$fs"
+  cryptsetup luksFormat -v --hash sha256 --key-size 256 --cipher aes-xts-plain64 --iter-time 2000 "$fs"
   sudo cryptsetup luksOpen "$fs" "$device"
   sudo mkfs.ntfs --fast --verbose /dev/mapper/"$device" # no gid/uid via ext3/4
   sudo cryptsetup luksClose "$device"
