@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PROJ="/home/alex/projects"
+PROJ="/home/user/projects"
 
 # 1
 tmux rename-window ""

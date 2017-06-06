@@ -11,6 +11,9 @@ dconf write /org/gnome/desktop/wm/preferences/button-layout "':minimize,maximize
 XKBOPTIONS="ctrl:nocaps"
 sudo dpkg-reconfigure keyboard-configuration
 
+# scale
+#xrandr --output DP-2 --scale 0.66667x0.66667
+
 # /etc/security/limits.conf
 * soft nofile 9000
 * hard nofile 65000
