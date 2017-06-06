@@ -26,7 +26,7 @@ elif [[ "$1" == "off" ]]; then
   sudo umount "$folder"
   sudo cryptsetup luksClose "$device"
   rmdir "$folder" --ignore-fail-on-non-empty
-elif [[ $1 == "make" && "$2" -gt 0 ]]; then
+elif [[ $1 == "make" && "$2" -gt 3 ]]; then
   dd if=/dev/urandom of="$fs" bs=1M count="$2"
   cryptsetup luksFormat -v --hash sha256 --key-size 256 --cipher aes-xts-plain64 --iter-time 2000 "$fs"
   sudo cryptsetup luksOpen "$fs" "$device"
