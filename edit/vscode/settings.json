@@ -1,18 +1,19 @@
 {
+  "editor.dragAndDrop": false,
   "editor.fontFamily": "Ubuntu Mono",
   "editor.fontSize": 16,
-  "editor.lineHeight": 17,
-  "editor.rulers": [80],
-  "editor.tabSize": 2,
   "editor.insertSpaces": true,
+  "editor.lineHeight": 17,
+  // "editor.minimap.showSlider": true,
+  "editor.mouseWheelZoom": true,
+  "editor.renderIndentGuides": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [80],
+  "editor.snippetSuggestions": "top",
+  "editor.tabSize": 2,
   "editor.roundedSelection": false,
   "editor.wordWrapColumn": 300,
   "editor.wrappingIndent": "indent",
-  "editor.snippetSuggestions": "top",
-  "editor.mouseWheelZoom": true,
-  "editor.renderWhitespace": "boundary",
-  "editor.renderIndentGuides": true,
-
   "editor.minimap.enabled": true,
   "editor.minimap.maxColumn": 120,
   "editor.minimap.renderCharacters": false,
@@ -24,7 +25,6 @@
     "**/node_modules": true,
     "**/jspm_packages": true
   },
-
   "files.trimTrailingWhitespace": true,
 
   "search.exclude": {
@@ -32,15 +32,24 @@
     "**/node_modules": true,
     "**/jspm_packages": true
   },
+  "search.useIgnoreFilesByDefault": true,
 
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
 
+  "typescript.tsdk": "/usr/lib/node_modules/typescript/lib",
+
+  "window.enableMenuBarMnemonics": false,
+  "window.menuBarVisibility": "default",
   "window.zoomLevel": 0,
-  "window.menuBarVisibility": "toggle",
 
   "workbench.activityBar.visible": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#333",
+    "tab.inactiveBackground": "#333"
+  },
   "workbench.colorTheme": "Monokai",
+  "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.showTabs": true,
   "workbench.editor.tabCloseButton": "off",
   "workbench.statusBar.visible": true,
