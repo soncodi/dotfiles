@@ -11,23 +11,6 @@ dconf write /org/gnome/desktop/wm/preferences/button-layout "':minimize,maximize
 XKBOPTIONS="ctrl:nocaps"
 sudo dpkg-reconfigure keyboard-configuration
 
-# scale
-#xrandr --output DP-2 --scale 0.66667x0.66667
-
-# /etc/security/limits.conf
-* soft nofile 9000
-* hard nofile 65000
-root soft nofile 9000
-root hard nofile 65000
-
-# /etc/pam.d/common-session
-# /etc/pam.d/common-session-noninteractive
-# session required pam_limits.so
-
-# inc watches
-cat /proc/sys/fs/inotify/max_user_watches
-echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-
 # ppk
 puttygen key.pem -o key.ppk -O private
 puttygen key.pem -o key.pub -O public
@@ -35,8 +18,19 @@ puttygen key.pem -o key.pub -O public
 # pem
 openssl x509 -in bundle.crt -out bundle.pem -outform PEM
 
-# cert order
-cat domain_com.crt \
-COMODORSADomainValidationSecureServerCA.crt \
-COMODORSAAddTrustCA.crt \
-AddTrustExternalCARoot.crt > domain.crt
+# irc
+ircs://server.com:9999/?pass=password
+
+/msg *sasl mechanism
+/msg *sasl mechanism plain
+/msg *sasl set username password
+
+
+# # scale
+# xrandr --output DP-2 --scale 0.66667x0.66667
+
+# # cert order
+# cat domain_com.crt \
+# COMODORSADomainValidationSecureServerCA.crt \
+# COMODORSAAddTrustCA.crt \
+# AddTrustExternalCARoot.crt > domain.crt
