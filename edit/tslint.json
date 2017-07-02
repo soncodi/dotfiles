@@ -44,7 +44,7 @@
     "number-literal-format": true,
     "object-literal-key-quotes": [true, "as-needed"],
     "one-variable-per-declaration": [true, "ignore-for-loop"],
-    "quotemark": [true, "single", "avoid-escape", "avoid-template"],
+    "quotemark": [true, "single", "avoid-escape", "avoid-template", "jsx-double"],
     "return-undefined": true,
     "semicolon": [true, "always", "ignore-interfaces"],
     "space-before-function-paren": [true, {
