@@ -1,7 +1,7 @@
 
 # gsettings set org.gnome.desktop.interface enable-animations false
 gsettings set org.gnome.desktop.peripherals.keyboard delay 275
-gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 7
+gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 10
 
 # GNOME icons right
 dconf write /org/gnome/desktop/wm/preferences/button-layout "':minimize,maximize,close'"
