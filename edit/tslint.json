@@ -73,7 +73,7 @@
     "no-consecutive-blank-lines": true,
     "no-irregular-whitespace": true,
     "no-trailing-whitespace": true,
-    "number-literal-format": true,
+    // "number-literal-format": true,
     "object-literal-key-quotes": [true, "as-needed"],
     "one-variable-per-declaration": [true, "ignore-for-loop"],
     "prefer-template": true,
