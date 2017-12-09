@@ -1,11 +1,17 @@
 
 system preferences
   caps => cmd
-  opt => cmd
-  cmd => opt
 
 iterm2
-  left cmd => ctrl
+  appearance >>
+    theme >> dark
+  keys >>
+    left cmd => ^ctrl
+  profiles >>
+    window >> style >> fullscreen
+    window >> screen >> mainscreen
+    terminal >> report terminal type >> linux
+    keys >> + ^F2 -> Send escape seq: [1;5Q
 
 karabiner elements
   n/a
