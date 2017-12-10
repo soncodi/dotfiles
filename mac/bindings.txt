@@ -5,6 +5,7 @@ system preferences
 iterm2
   appearance >>
     theme >> dark
+    system >> exclude from dock/tab
   keys >>
     left cmd => ^ctrl
   profiles >>
@@ -14,7 +15,13 @@ iterm2
     keys >> + ^F2 -> Send escape seq: [1;5Q
 
 karabiner elements
-  n/a
+  simple mod >>
+    caps => l_cmd
+    l_cmd => l_opt
+  complex mod >> (~/.config/karabiner/karabiner.json)
+    opt+tab => cmd+tab
+    cmd+tab => ctrl+tab
+    opt+`   => cmd+`
 
 usb overdrive
   mouse 4 => keybinding back
