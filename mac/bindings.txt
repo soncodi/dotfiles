@@ -1,6 +1,16 @@
 
 system preferences
-  caps => cmd
+  keyboard >>
+    modifier keys >>
+      caps => cmd
+    text >>
+      disable all
+  accessibility >>
+    general >> disable all
+    display >> disable shake mouse
+    mouse & trackpad >>
+      max double click speed
+      disable spring loading delay
 
 iterm2
   appearance >>
@@ -14,7 +24,7 @@ iterm2
     terminal >> report terminal type >> linux
     keys >> + ^F2 -> Send escape seq: [1;5Q
 
-karabiner elements
+karabiner-elements
   simple mod >>
     caps => l_cmd
     l_cmd => l_opt
@@ -24,6 +34,9 @@ karabiner elements
     opt+`   => cmd+`
 
 usb overdrive
-  mouse 4 => keybinding back
-  mouse 5 => keybinding forward
-  mwheel up/down => 3 lines
+  settings >>
+    speed 15/21
+    disable acceleration
+    mouse 4 => press key => caps+right
+    mouse 5 => press key => caps+left
+    mwheel up/down => 2 lines
