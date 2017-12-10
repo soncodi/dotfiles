@@ -1,80 +1,20 @@
 [
   {
-    "key": "cmd+d",
-    "command": "editor.action.deleteLines",
-    "when": "editorTextFocus"
+  "key": "ctrl+tab",
+  "command": "workbench.action.nextEditorInGroup"
   },
   {
-    "key": "cmd+k cmd+0",
-    "command": "editor.unfoldAll",
-    "when": "editorTextFocus"
+  "key": "ctrl+shift+tab",
+  "command": "workbench.action.previousEditorInGroup"
   },
   {
-    "key": "cmd+y",
-    "command": "redo",
-    "when": "editorTextFocus && !editorReadonly"
+  "key": "cmd+backspace",
+  "command": "deleteWordLeft",
+  "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "cmd+j",
-    "command": "editor.action.joinLines"
-  },
-  {
-    "key": "cmd+backspace",
-    "command": "deleteWordLeft",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+right",
-    "command": "cursorWordStartRight",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+left",
-    "command": "cursorWordStartLeft",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+cmd+right",
-    "command": "cursorWordStartRightSelect",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+cmd+left",
-    "command": "cursorWordStartLeftSelect",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+right",
-    "command": "cursorEnd",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+left",
-    "command": "cursorHome",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+cmd+a",
-    "command": "extension.align",
-    "when": "editorTextFocus"
+  "key": "alt+backspace",
+  "command": "-deleteWordLeft",
+  "when": "editorTextFocus && !editorReadonly"
   }
-  // {
-  //     "key": "cmd+tab",
-  //     "command": "workbench.action.nextEditor"
-  // },
-  // {
-  //     "key": "ctrl+shift+tab",
-  //     "command": "workbench.action.previousEditor"
-  // },
-
-  // {
-  //   "key": "cmd+down",
-  //   "command": "editor.action.moveLinesDownAction",
-  //   "when": "editorTextFocus"
-  // },
-  // {
-  //   "key": "cmd+up",
-  //   "command": "editor.action.moveLinesUpAction",
-  //   "when": "editorTextFocus"
-  // }
 ]
