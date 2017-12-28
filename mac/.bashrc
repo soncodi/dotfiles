@@ -1,5 +1,6 @@
 
-alias ll='ls -alh'
+alias ls='ls -G'
+alias ll='ls -alhG'
 
 #source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
 source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
