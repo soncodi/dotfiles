@@ -2,7 +2,7 @@
 [diff]
   tool = p4merge
 [difftool "p4merge"]
-  cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "$BASE" "$LOCAL"
+  cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "$LOCAL" "$BASE"
 [merge]
   keepBackup = false
   tool = p4merge
