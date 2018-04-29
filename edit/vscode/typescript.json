@@ -2,7 +2,7 @@
   "Lambda": {
     "prefix": "f",
     "body": [
-      "(${...args}) => {$0}"
+      "(${1}) => {$0}"
     ],
     "description": "Lambda function"
   },
@@ -15,7 +15,7 @@
     "description": "Console log"
   },
 
-	"Promise": {
+  "Promise": {
     "prefix": "p",
     "body": [
       "new Promise((resolve, ${1:reject}) => {",

@@ -87,4 +87,72 @@
   "command": "editor.action.moveLinesUpAction",
   "key": "alt+shift+ctrl+k",
   "when": "editorTextFocus && !editorReadonly"
-}]
+},
+
+{
+  "command": "search.action.focusNextSearchResult",
+  "key": "alt+u"
+  // "when": "searchInputBoxFocus && searchViewletVisible"
+}, {
+  "command": "search.action.focusPreviousSearchResult",
+  "key": "alt+i"
+  // "when": "searchInputBoxFocus && searchViewletVisible"
+},
+
+{
+  "command": "search.history.showNext",
+  "key": "alt+j",
+  "when": "searchInputBoxFocus && searchViewletVisible"
+}, {
+  "command": "search.history.showPrevious",
+  "key": "alt+k",
+  "when": "searchInputBoxFocus && searchViewletVisible"
+},
+{
+  "key": "alt+s",
+  "command": "editor.action.goToDeclaration",
+  "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+},
+{
+  "key": "alt+a",
+  "command": "workbench.action.navigateBack"
+},
+
+{
+  "key": "shift+backspace",
+  "command": "deleteRight",
+  "when": "editorTextFocus && !editorReadonly"
+},
+{
+  "key": "delete",
+  "command": "-deleteRight",
+  "when": "editorTextFocus && !editorReadonly"
+},
+{
+  "key": "ctrl+shift+backspace",
+  "command": "deleteWordRight",
+  "when": "editorTextFocus && !editorReadonly"
+},
+{
+  "key": "ctrl+delete",
+  "command": "-deleteWordRight",
+  "when": "editorTextFocus && !editorReadonly"
+},
+{
+  "key": "alt+k",
+  "command": "selectPrevSuggestion",
+  "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+},
+{
+  "key": "alt+j",
+  "command": "selectNextSuggestion",
+  "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+},
+
+{
+  "key": "ctrl+enter",
+  "command": "-search.action.openResultToSide",
+  "when": "fileMatchOrMatchFocus && searchViewletVisible"
+}
+
+]
