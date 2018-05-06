@@ -1,15 +1,3 @@
-
-apt-get install ecryptfs-utils cryptsetup gnome-disk-utility
-
-# swap
-fallocate -l 8G /swapcrypt
-swapcrypt /swapcrypt /dev/urandom swap # /etc/crypttab
-/dev/mapper/swapcrypt none swap sw 0 0 # /etc/fstab
-cryptdisks_start swapcrypt
-swapon -a
-swapon -s
-cat /proc/swaps
-
 #!/bin/bash
 
 set -e
