@@ -8,6 +8,12 @@ gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 10
 XKBOPTIONS="ctrl:nocaps"
 sudo dpkg-reconfigure keyboard-configuration
 
+# irc
+ircs://server.com:9999/?pass=password
+/msg *sasl mechanism
+/msg *sasl mechanism plain
+/msg *sasl set username password
+
 # # ppk
 # puttygen key.pem -o key.ppk -O private
 # puttygen key.pem -o key.pub -O public
