@@ -100,11 +100,11 @@
 },
 
 {
-  "command": "search.history.showNext",
+  "command": "history.showNext",
   "key": "alt+j",
   "when": "searchInputBoxFocus && searchViewletVisible"
 }, {
-  "command": "search.history.showPrevious",
+  "command": "history.showPrevious",
   "key": "alt+k",
   "when": "searchInputBoxFocus && searchViewletVisible"
 },
