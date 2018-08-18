@@ -14,6 +14,9 @@ ircs://server.com:9999/?pass=password
 /msg *sasl mechanism plain
 /msg *sasl set username password
 
+# enable VM USB
+sudo adduser $USER vboxusers
+
 # gnome-shell top bar gradient
 # /usr/share/gnome-shell/theme/ubuntu.css L#1951
 # /* panel.solid { ... } */
