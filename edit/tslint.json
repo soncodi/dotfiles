@@ -26,10 +26,7 @@
     ],
     "unified-signatures": true,
 
-    "await-promise": [
-      true,
-      "Bluebird"
-    ],
+    "await-promise": true,
     "curly": true,
     "label-position": true,
     "no-arg": true,
@@ -79,7 +76,7 @@
     "object-literal-key-quotes": [true, "as-needed"],
     "one-variable-per-declaration": [true, "ignore-for-loop"],
     "prefer-template": true,
-    "quotemark": [true, "single", "avoid-escape", "avoid-template"],
+    "quotemark": [true, "single", "avoid-escape", "avoid-template", "jsx-double"],
     "return-undefined": true,
     "semicolon": [true, "always", "ignore-interfaces"],
     "space-before-function-paren": [true, {
