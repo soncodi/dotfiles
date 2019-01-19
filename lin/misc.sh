@@ -26,7 +26,7 @@ GTK_IM_MODULE=ibus
 
 # Atheros QCA6174 firmware
 sudo wget -O /lib/firmware/ath10k/QCA6174/hw3.0/firmware-6.bin \
-  https://github.com/kvalo/ath10k-firmware/raw/master/QCA6174/hw3.0/4.4.1/firmware-6.bin_WLAN.RM.4.4.1-00124-QCARMSWPZ-1
+  https://github.com/kvalo/ath10k-firmware/raw/master/QCA6174/hw3.0/4.4.1/firmware-6.bin_WLAN.RM.4.4.1-00132-QCARMSWP-1
 
 sudo wget -O /lib/firmware/ath10k/QCA6174/hw3.0/board-2.bin \
   https://github.com/kvalo/ath10k-firmware/raw/master/QCA6174/hw3.0/board-2.bin
