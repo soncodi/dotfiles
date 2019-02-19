@@ -39,6 +39,7 @@
     "no-empty": true,
     "no-floating-promises": true,
     "no-for-in-array": true,
+    "no-implicit-dependencies": true,
     "no-inferred-empty-object-type": true,
     "no-invalid-template-strings": true,
     "no-misused-new": true,
@@ -87,6 +88,7 @@
     "space-within-parens": true,
     "switch-final-break": [true, "always"],
     "type-literal-delimiter": true,
+    "unnecessary-bind": true,
     "whitespace": [
       true,
       "check-branch",
