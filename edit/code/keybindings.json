@@ -153,6 +153,13 @@
   "key": "ctrl+enter",
   "command": "-search.action.openResultToSide",
   "when": "fileMatchOrMatchFocus && searchViewletVisible"
+},
+
+{
+  "key": "alt+space",
+  "command": "type",
+  "args": { "text": " " },
+  "when": "editorTextFocus"
 }
 
 ]

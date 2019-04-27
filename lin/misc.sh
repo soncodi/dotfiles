@@ -8,18 +8,6 @@ gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 10
 XKBOPTIONS="ctrl:nocaps"
 sudo dpkg-reconfigure keyboard-configuration
 
-# irc
-ircs://server.com:9999/?pass=password
-/msg *sasl mechanism
-/msg *sasl mechanism plain
-/msg *sasl set username password
-
-# enable VM USB
-sudo adduser $USER vboxusers
-
-# /usr/share/code/bin/code
-GTK_IM_MODULE=ibus
-
 # gnome-shell top bar gradient
 # /usr/share/gnome-shell/theme/ubuntu.css L#1951
 # /* panel.solid { ... } */
@@ -30,6 +18,15 @@ sudo wget -O /lib/firmware/ath10k/QCA6174/hw3.0/firmware-6.bin \
 
 sudo wget -O /lib/firmware/ath10k/QCA6174/hw3.0/board-2.bin \
   https://github.com/kvalo/ath10k-firmware/raw/master/QCA6174/hw3.0/board-2.bin
+
+# enable VM USB
+sudo adduser $USER vboxusers
+
+# irc
+# ircs://server.com:9999/?pass=password
+# /msg *sasl mechanism
+# /msg *sasl mechanism plain
+# /msg *sasl set username password
 
 # key => ppk
 # puttygen key.pem -o key.ppk -O private

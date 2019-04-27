@@ -5,10 +5,10 @@ alias ll='ls -alh'
 
 stty -ixon
 
-# export ANDROID_HOME=/home/?/Android/Sdk
-# export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
+# export ANDROID_HOME="${HOME}/Android/Sdk"
+# export PATH="${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools"
 
-# ANDROID_STUDIO=/home/?/Desktop/android-studio
-# #export JAVA_HOME=$ANDROID_STUDIO/jre
-# export PATH=${PATH}:"${ANDROID_STUDIO}/gradle/gradle-3.2/bin"
-# export PATH=${PATH}:"${ANDROID_STUDIO}/jre/bin"
+# ANDROID_STUDIO="${HOME}/Desktop/android-studio"
+# # export JAVA_HOME=$ANDROID_STUDIO/jre
+# export PATH="${PATH}:${ANDROID_STUDIO}/gradle/gradle-3.2/bin"
+# export PATH="${PATH}:${ANDROID_STUDIO}/jre/bin"

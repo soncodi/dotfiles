@@ -3,7 +3,5 @@ Windows Registry Editor Version 5.00
 
 ; UTC hardware clock
 
-
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
 "RealTimeIsUniversal"=qword:00000001
-

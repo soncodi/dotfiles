@@ -5,10 +5,7 @@
   "editor.fontSize": 16,
   "editor.insertSpaces": true,
   "editor.lineHeight": 17,
-  "editor.minimap.enabled": true,
   "editor.minimap.maxColumn": 120,
-  "editor.minimap.renderCharacters": false,
-  "editor.minimap.showSlider": "always",
   "editor.mouseWheelZoom": true,
   "editor.renderIndentGuides": true,
   "editor.renderWhitespace": "boundary",
@@ -41,22 +38,25 @@
   "telemetry.enableCrashReporter": false,
 
   "typescript.disableAutomaticTypeAcquisition": true,
-  "typescript.tsdk": "/usr/lib/node_modules/typescript/lib",
+  "typescript.tsdk": "~/.npm-global/lib/node_modules/typescript/lib",
 
-  "window.enableMenuBarMnemonics": false,
-  "window.menuBarVisibility": "default",
-  "window.zoomLevel": 0,
-
-  "workbench.activityBar.visible": true,
   "workbench.colorCustomizations": {
     "statusBar.background": "#333",
     "tab.inactiveBackground": "#333"
   },
   "workbench.colorTheme": "Monokai",
-  "workbench.editor.closeOnFileDelete": true,
-  "workbench.editor.showTabs": true,
   "workbench.editor.tabCloseButton": "off",
-  "workbench.statusBar.visible": true,
   "extensions.ignoreRecommendations": true,
-  "workbench.sideBar.location": "left"
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.showSlider": "always",
+  "breadcrumbs.enabled": true,
+  "window.zoomLevel": 0,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.titleBarStyle": "custom",
+  "window.enableMenuBarMnemonics": false,
+  "window.menuBarVisibility": "hidden",
+  "workbench.activityBar.visible": true
 }
