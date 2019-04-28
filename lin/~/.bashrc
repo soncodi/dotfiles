@@ -5,6 +5,8 @@ LS_COLORS='rs=0:di=01;94:'
 
 alias ll='ls -alh'
 
+alias code='GTK_IM_MODULE="xim" code'
+
 stty -ixon
 
 # export ANDROID_HOME="${HOME}/Android/Sdk"
