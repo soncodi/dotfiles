@@ -9,8 +9,10 @@ XKBOPTIONS="ctrl:nocaps"
 sudo dpkg-reconfigure keyboard-configuration
 
 # gnome-shell top bar gradient
-# /usr/share/gnome-shell/theme/ubuntu.css L#1951
+# /usr/share/gnome-shell/theme/ubuntu.css L#1951 (18.04)
 # /* panel.solid { ... } */
+# /usr/share/gnome-shell/theme/gdm3.css L#724 (19.04)
+# /* #panel { ... } */
 
 # Atheros QCA6174 firmware
 sudo wget -O /lib/firmware/ath10k/QCA6174/hw3.0/firmware-6.bin \
