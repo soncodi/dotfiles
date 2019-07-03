@@ -1,4 +1,4 @@
-// 5.16.0
+// 5.18.0
 
 {
   "rules": {
@@ -30,6 +30,7 @@
     "curly": true,
     "label-position": true,
     "no-arg": true,
+    "no-async-without-await": true,
     "no-conditional-assignment": true,
     "no-construct": true,
     "no-debugger": true,
