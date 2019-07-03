@@ -57,6 +57,5 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.titleBarStyle": "custom",
   "window.enableMenuBarMnemonics": false,
-  "window.menuBarVisibility": "hidden",
-  "workbench.activityBar.visible": true
+  "window.customMenuBarAltFocus": false
 }
