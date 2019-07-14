@@ -7,6 +7,9 @@ alias ll='ls -alh'
 
 alias code='GTK_IM_MODULE="xim" code'
 
+export PATH="$PATH:$HOME/.npm-global/bin"
+export NODE_PATH="$NODE_PATH:$HOME/.npm-global/lib/node_modules"
+
 stty -ixon
 
 # export ANDROID_HOME="${HOME}/Android/Sdk"
