@@ -5,6 +5,7 @@ LS_COLORS='rs=0:di=01;94:'
 
 alias ll='ls -alh'
 
+# ibus-setup - remove emoji/unicode shortcuts
 alias code='GTK_IM_MODULE="xim" code'
 
 export PATH="$PATH:$HOME/.npm-global/bin"
