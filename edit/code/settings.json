@@ -57,5 +57,13 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.titleBarStyle": "custom",
   "window.enableMenuBarMnemonics": false,
-  "window.customMenuBarAltFocus": false
+  "window.customMenuBarAltFocus": false,
+  "editor.cursorSurroundingLines": 3,
+
+  "alignment.surroundSpace": {
+    "colon":      [-1, 1],
+    "assignment": [1, 1],
+    "arrow":      [1, 1],
+    "comment":    1
+  }
 }
