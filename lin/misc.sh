@@ -24,12 +24,6 @@ sudo wget -O /lib/firmware/ath10k/QCA6174/hw3.0/board-2.bin \
 # enable VM USB
 sudo adduser $USER vboxusers
 
-# irc
-# ircs://server.com:9999/?pass=password
-# /msg *sasl mechanism
-# /msg *sasl mechanism plain
-# /msg *sasl set username password
-
 # key => ppk
 # puttygen key.pem -o key.ppk -O private
 # puttygen key.pem -o key.pub -O public
