@@ -32,17 +32,21 @@ gsettings set org.gnome.desktop.interface enable-animations false
 gsettings set org.gnome.desktop.peripherals.keyboard delay 275
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 10
 gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat
+gsettings set org.gnome.desktop.wm.keybindings activate-window-menu []
+gsettings set org.gnome.desktop.wm.keybindings switch-windows []
+gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward []
+gsettings set org.gnome.desktop.wm.keybindings switch-applications ["'<Alt>Tab'"]
+gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward ["'<Shift><Alt>Tab'"]
 
-
-# cleanup
-cd /usr/share/gnome-shell/extensions
-rm -rf *
+# # cleanup
+# cd /usr/share/gnome-shell/extensions
+# rm -rf *
 
 # remove emoji input
 ibus-setup
 
-# enable VM USB
-sudo adduser $USER vboxusers
+# # enable VM USB
+# sudo adduser $USER vboxusers
 
 # key => ppk
 # puttygen key.pem -o key.ppk -O private
