@@ -6,6 +6,7 @@ apt install \
   dconf-editor \
   gnome-tweaks \
   chrome-gnome-shell \
+  ttf-mscorefonts-installer \
   nemo
 
 # caps => ctrl in terminal
