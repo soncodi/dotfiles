@@ -1,13 +1,17 @@
 
 # deps
 apt install \
+  git \
   byobu \
   fail2ban \
   dconf-editor \
   gnome-tweaks \
   chrome-gnome-shell \
-  ttf-mscorefonts-installer \
   nemo
+
+# manual deb
+# apt install ttf-mscorefonts-installer
+# https://packages.ubuntu.com/focal/ttf-mscorefonts-installer
 
 # caps => ctrl in terminal
 # /etc/default/keyboard
