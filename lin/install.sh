@@ -9,6 +9,12 @@ apt install \
   chrome-gnome-shell \
   nemo
 
+apt purge \
+  ubuntu-report \
+  popularity-contest \
+  apport \
+  whoopsie
+
 # manual deb
 # apt install ttf-mscorefonts-installer
 # https://packages.ubuntu.com/focal/ttf-mscorefonts-installer
