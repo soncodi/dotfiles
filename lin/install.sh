@@ -1,7 +1,9 @@
 
 # deps
 apt install \
+  htop \
   git \
+  vim \
   byobu \
   fail2ban \
   dconf-editor \
