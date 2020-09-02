@@ -1,6 +1,9 @@
 
 # deps
 apt install \
+  curl \
+  gparted \
+  build-essential \
   htop \
   git \
   vim \
@@ -54,6 +57,9 @@ gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward ["'<
 # # cleanup
 # cd /usr/share/gnome-shell/extensions
 # rm -rf *
+
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
 
 # remove emoji input
 ibus-setup
