@@ -32,10 +32,10 @@ sudo dpkg-reconfigure keyboard-configuration
 # nemo
 # add `nemo-desktop` to startupapps
 # dconf-editor /org/nemo/desktop
+gsettings set org.gnome.desktop.background show-desktop-icons false
 xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
 gsettings set org.nemo.preferences date-format 'iso'
 gsettings set org.nemo.preferences default-folder-viewer 'list-view'
-gsettings set org.gnome.desktop.background show-desktop-icons false
 gsettings set org.nemo.desktop show-desktop-icons true
 gsettings set org.nemo.icon-view default-zoom-level 'small'
 gsettings set org.nemo.desktop trash-icon-visible true
@@ -52,6 +52,7 @@ gsettings set org.gnome.desktop.interface enable-animations false
 gsettings set org.gnome.desktop.peripherals.keyboard delay 275
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 10
 gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat
+gsettings set org.gnome.settings-daemon.peripherals.mouse double-click 250
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu []
 gsettings set org.gnome.desktop.wm.keybindings switch-windows []
 gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward []
