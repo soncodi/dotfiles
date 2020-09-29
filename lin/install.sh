@@ -65,6 +65,7 @@ gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward ["'<
 
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
+npm config set save-prefix='~'
 
 # remove emoji input
 ibus-setup
