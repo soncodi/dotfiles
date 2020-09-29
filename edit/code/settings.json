@@ -1,5 +1,5 @@
 {
-  "editor.autoIndent": true,
+  "editor.autoIndent": "full",
   "editor.dragAndDrop": false,
   "editor.fontFamily": "Ubuntu Mono",
   "editor.fontSize": 16,
@@ -65,5 +65,9 @@
     "assignment": [1, 1],
     "arrow":      [1, 1],
     "comment":    1
-  }
+  },
+  "editor.foldingHighlight": false,
+  "editor.unfoldOnClickAfterEndOfLine": true,
+  "editor.wordWrap": "on",
+  "workbench.editor.revealIfOpen": true
 }
