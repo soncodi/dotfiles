@@ -47,6 +47,8 @@ gsettings set org.gnome.desktop.wm.keybindings switch-windows []
 gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward []
 gsettings set org.gnome.desktop.wm.keybindings switch-applications ["'<Alt>Tab'"]
 gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward ["'<Shift><Alt>Tab'"]
+# gsettings set org.freedesktop.ibus.general.hotkey trigger []
+# gsettings set org.freedesktop.ibus.general.hotkey triggers []
 
 # purge snap
 # sudo rm -rf /var/cache/snapd/
