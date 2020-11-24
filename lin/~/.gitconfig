@@ -26,5 +26,6 @@
   l = log --color --graph --all --oneline --decorate
   s = status -sb
   d = difftool -y
+  m = mergetool -y
 [pull]
   ff = only
