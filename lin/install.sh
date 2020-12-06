@@ -14,6 +14,7 @@ apt install \
   chrome-gnome-shell
 
 apt purge \
+  kerneloops \
   ubuntu-report \
   popularity-contest \
   apport \
@@ -32,6 +33,10 @@ sudo fc-cache -f -v
 # /etc/default/keyboard
 XKBOPTIONS="ctrl:nocaps"
 sudo dpkg-reconfigure keyboard-configuration
+
+# sudo systemctl disable sssd
+# sudo systemctl disable openvpn
+# # systemctl disable cups.service cups.socket cups.path cups-browsed.service
 
 # remove extensions
 rm -rf /usr/share/gnome-shell/extensions/*
@@ -58,6 +63,7 @@ gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward ["'<
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 npm config set save-prefix='~'
+npm config set send-metrics=false
 
 # remove emoji input
 ibus-setup
