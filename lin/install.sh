@@ -13,6 +13,10 @@ apt install \
   gnome-tweaks \
   chrome-gnome-shell
 
+# deb: https://packages.ubuntu.com/groovy/ttf-mscorefonts-installer
+apt install ttf-mscorefonts-installer
+sudo fc-cache -f -v
+
 apt purge \
   kerneloops \
   ubuntu-report \
@@ -20,14 +24,14 @@ apt purge \
   apport \
   whoopsie
 
+# sudo apt purge snapd gnome-software-plugin-snap
+# sudo rm -rf /var/cache/snapd/
+# rm -rf ~/snap
+
 # fp
 # http://dell.archive.canonical.com/updates/pool/public/libf/libfprint-2-tod1-goodix/
 # sudo dpkg -i libfprint-2-tod1-goodix_0.0.4-0ubuntu1somerville1_amd64.deb
 sudo pam-auth-update
-
-# deb: https://packages.ubuntu.com/groovy/ttf-mscorefonts-installer
-apt install ttf-mscorefonts-installer
-sudo fc-cache -f -v
 
 # caps => ctrl in terminal
 # /etc/default/keyboard
@@ -40,6 +44,9 @@ sudo dpkg-reconfigure keyboard-configuration
 
 # remove extensions
 rm -rf /usr/share/gnome-shell/extensions/*
+
+# remove emoji input
+ibus-setup
 
 # misc
 gsettings set org.gnome.desktop.interface enable-animations false
@@ -55,15 +62,7 @@ gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward ["'<
 # gsettings set org.freedesktop.ibus.general.hotkey trigger []
 # gsettings set org.freedesktop.ibus.general.hotkey triggers []
 
-# purge snap
-# sudo rm -rf /var/cache/snapd/
-# sudo apt remove --purge snapd gnome-software-plugin-snap
-# rm -rf ~/snap
-
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 npm config set save-prefix='~'
 npm config set send-metrics=false
-
-# remove emoji input
-ibus-setup
