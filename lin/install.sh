@@ -5,6 +5,7 @@ apt install \
   gparted \
   build-essential \
   htop \
+  tree \
   git \
   vim \
   byobu \
