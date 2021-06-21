@@ -1,5 +1,13 @@
 {
-  "Lambda": {
+  "If": {
+    "prefix": "i",
+    "body": [
+      "if (${condition}) {\n  ${0}\n}"
+    ],
+    "description": "If statement"
+  },
+
+	"Lambda": {
     "prefix": "f",
     "body": [
       "(${1}) => {$0}"

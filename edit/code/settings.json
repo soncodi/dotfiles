@@ -19,12 +19,11 @@
   "emmet.triggerExpansionOnTab": true,
 
   "explorer.openEditors.visible": 0,
-  "explorer.decorations.badges": false,
 
   "files.exclude": {
     "**/.git": true,
-    "**/node_modules": true,
-    "**/jspm_packages": true
+    "**/jspm_packages": true,
+    "**/node_modules": true
   },
   "files.trimTrailingWhitespace": true,
 
@@ -50,7 +49,6 @@
   "editor.minimap.renderCharacters": false,
   "editor.minimap.showSlider": "always",
   "breadcrumbs.enabled": true,
-  "window.zoomLevel": 0,
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
 
@@ -69,5 +67,14 @@
   "editor.foldingHighlight": false,
   "editor.unfoldOnClickAfterEndOfLine": true,
   "editor.wordWrap": "on",
-  "workbench.editor.revealIfOpen": true
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "workbench.editor.revealIfOpen": true,
+  "css.lint.ieHack": "warning",
+  "explorer.decorations.badges": false,
+  "workbench.editor.decorations.badges": false,
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.startupEditor": "none",
+  "security.workspace.trust.untrustedFiles": "newWindow"
 }
