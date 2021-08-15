@@ -18,6 +18,17 @@ apt install \
 apt install ttf-mscorefonts-installer
 sudo fc-cache -f -v
 
+# # p4merge lib
+# apt install libxcb-xinerama0
+
+# # FF playback
+# apt install libavcodec-extra
+
+# # android udev
+# # https://github.com/M0Rf30/android-udev-rules/blob/master/51-android.rules
+# # /etc/udev/rules.d/51-android.rules
+# sudo usermod -aG plugdev $LOGNAME
+
 apt purge \
   kerneloops \
   ubuntu-report \
@@ -25,14 +36,21 @@ apt purge \
   apport \
   whoopsie
 
+# apt purge cups cups-common
+
+ufw enable
+ufw status verbose
+cat /var/log/ufw.log
+# ufw disable
+
 # sudo apt purge snapd gnome-software-plugin-snap
 # sudo rm -rf /var/cache/snapd/
 # rm -rf ~/snap
 
-# fp
-# http://dell.archive.canonical.com/updates/pool/public/libf/libfprint-2-tod1-goodix/
-# sudo dpkg -i libfprint-2-tod1-goodix_0.0.4-0ubuntu1somerville1_amd64.deb
-sudo pam-auth-update
+# # fp
+# # http://dell.archive.canonical.com/updates/pool/public/libf/libfprint-2-tod1-goodix/
+# # sudo dpkg -i libfprint-2-tod1-goodix_0.0.4-0ubuntu1somerville1_amd64.deb
+# sudo pam-auth-update
 
 # caps => ctrl in terminal
 # /etc/default/keyboard
@@ -43,8 +61,12 @@ sudo dpkg-reconfigure keyboard-configuration
 # sudo systemctl disable openvpn
 # # systemctl disable cups.service cups.socket cups.path cups-browsed.service
 
-# remove extensions
-rm -rf /usr/share/gnome-shell/extensions/*
+# extensions
+# cd /usr/share/glib-2.0 && glib-compile-schemas .
+# /usr/share/gnome-shell/extensions
+# /usr/share/glib-2.0/schemas
+# ~/.local/share/gnome-shell/extensions
+# ~/.local/share/glib-2.0/schemas
 
 # remove emoji input
 ibus-setup
