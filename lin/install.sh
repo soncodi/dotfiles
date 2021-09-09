@@ -76,7 +76,7 @@ gsettings set org.gnome.desktop.interface enable-animations false
 gsettings set org.gnome.desktop.peripherals.keyboard delay 275
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 10
 gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat
-gsettings set org.gnome.settings-daemon.peripherals.mouse double-click 250
+gsettings set org.gnome.settings-daemon.peripherals.mouse double-click 200
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu []
 gsettings set org.gnome.desktop.wm.keybindings switch-windows []
 gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward []
