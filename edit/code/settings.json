@@ -7,7 +7,6 @@
   "editor.lineHeight": 17,
   "editor.minimap.maxColumn": 120,
   "editor.mouseWheelZoom": true,
-  "editor.renderIndentGuides": true,
   "editor.renderWhitespace": "boundary",
   "editor.roundedSelection": false,
   "editor.rulers": [80],
@@ -33,15 +32,16 @@
     "**/jspm_packages": true
   },
 
-  "telemetry.enableTelemetry": false,
-  "telemetry.enableCrashReporter": false,
+  "telemetry.telemetryLevel": "off",
 
   "typescript.disableAutomaticTypeAcquisition": true,
   "typescript.tsdk": "~/.npm-global/lib/node_modules/typescript/lib",
 
   "workbench.colorCustomizations": {
     "statusBar.background": "#333",
-    "tab.inactiveBackground": "#333"
+    "tab.inactiveBackground": "#333",
+    "editorBracketMatch.border": "#fff",
+    "editorIndentGuide.activeBackground": "#aaa"
   },
   "workbench.colorTheme": "Monokai",
   "workbench.editor.tabCloseButton": "off",
@@ -67,14 +67,24 @@
   "editor.foldingHighlight": false,
   "editor.unfoldOnClickAfterEndOfLine": true,
   "editor.wordWrap": "on",
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.guides.highlightActiveIndentation": true,
   "workbench.editor.revealIfOpen": true,
   "css.lint.ieHack": "warning",
   "explorer.decorations.badges": false,
   "workbench.editor.decorations.badges": false,
   "workbench.editor.untitled.hint": "hidden",
   "workbench.startupEditor": "none",
-  "security.workspace.trust.untrustedFiles": "newWindow"
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  }
 }
