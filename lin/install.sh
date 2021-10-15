@@ -18,7 +18,11 @@ apt install \
 apt install ttf-mscorefonts-installer
 sudo fc-cache -f -v
 
-# # p4merge lib
+# # p4merge
+# cd ~/Desktop/p4v-*
+# sudo mkdir /opt/p4v
+# sudo mv * /opt/p4v
+# sudo ln -s /opt/p4v/bin/p4merge /usr/local/bin/p4merge
 # apt install libxcb-xinerama0
 
 # # FF playback
