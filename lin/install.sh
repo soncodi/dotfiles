@@ -52,8 +52,9 @@ cat /var/log/ufw.log
 # rm -rf ~/snap
 
 # # fp
+# sudo apt install libfprint-2-tod1
 # # http://dell.archive.canonical.com/updates/pool/public/libf/libfprint-2-tod1-goodix/
-# # sudo dpkg -i libfprint-2-tod1-goodix_0.0.4-0ubuntu1somerville1_amd64.deb
+# sudo dpkg -i libfprint-2-tod1-goodix_0.0.6-0ubuntu1~somerville1_amd64.deb
 # sudo pam-auth-update
 
 # caps => ctrl in terminal
