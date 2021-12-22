@@ -80,8 +80,12 @@ ibus-setup
 gsettings set org.gnome.desktop.interface enable-animations false
 gsettings set org.gnome.desktop.peripherals.keyboard delay 275
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 10
-gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat
+gsettings set org.gnome.desktop.peripherals.mouse accel-profile "flat"
 gsettings set org.gnome.desktop.peripherals.mouse double-click 200
+gsettings set org.gnome.desktop.peripherals.touchpad click-method "fingers"
+gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
+gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
+gsettings set org.gnome.desktop.peripherals.touchpad two-finger-scrolling-enabled true
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu []
 gsettings set org.gnome.desktop.wm.keybindings switch-windows []
 gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward []
@@ -89,7 +93,7 @@ gsettings set org.gnome.desktop.wm.keybindings switch-applications ["'<Alt>Tab'"
 gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward ["'<Shift><Alt>Tab'"]
 gsettings set org.gnome.nautilus.preferences default-folder-viewer "list-view"
 gsettings set org.gnome.nautilus.preferences show-image-thumbnails "never"
-gsettings set org.gnome.nautilus.list-view default-zoom-level small
+gsettings set org.gnome.nautilus.list-view default-zoom-level "small"
 gsettings set org.gnome.nautilus.list-view default-visible-columns ["'name', 'size', 'owner', 'group', 'permissions', 'date_accessed'"]
 # gsettings set org.freedesktop.ibus.general.hotkey trigger []
 # gsettings set org.freedesktop.ibus.general.hotkey triggers []
