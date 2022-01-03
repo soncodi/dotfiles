@@ -1,20 +1,22 @@
 
-# deps
+# server
 apt install \
   curl \
-  gparted \
   build-essential \
   htop \
-  tree \
   git \
   vim \
   byobu \
-  fail2ban \
+  fail2ban
+
+# desktop
+apt install \
+  gparted \
   dconf-editor \
   gnome-tweaks \
   chrome-gnome-shell
 
-# deb: https://packages.ubuntu.com/groovy/ttf-mscorefonts-installer
+# ttf
 apt install ttf-mscorefonts-installer
 sudo fc-cache -f -v
 
@@ -41,15 +43,25 @@ apt purge \
   whoopsie
 
 # apt purge cups cups-common
-
-ufw enable
-ufw status verbose
-cat /var/log/ufw.log
-# ufw disable
-
 # sudo apt purge snapd gnome-software-plugin-snap
 # sudo rm -rf /var/cache/snapd/
 # rm -rf ~/snap
+
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
+sudo ufw allow ssh
+sudo ufw allow http
+sudo ufw allow https
+#sudo sed -i '/ufw-before-input.*icmp/s/ACCEPT/DROP/g' /etc/ufw/before.rules
+
+sudo ufw enable
+
+sudo ufw status verbose
+cat /var/log/ufw.log
+# sudo ufw disable
+
+#sudo sed -i -E 's/#?PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
 
 # # fp
 # sudo apt install libfprint-2-tod1
