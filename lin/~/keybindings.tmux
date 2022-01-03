@@ -13,3 +13,5 @@ set -g pane-active-border-style bg="#000000",fg="#ffffff"
 #set -g pane-border-fg "#999999"
 #set -g pane-active-border-fg "#ffffff"
 #set -g pane-active-border-bg "#000000"
+
+#set-option -g mouse on
