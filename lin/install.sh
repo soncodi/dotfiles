@@ -53,11 +53,13 @@ sudo ufw default allow outgoing
 sudo ufw allow ssh
 sudo ufw allow http
 sudo ufw allow https
+#sudo ufw delete allow 22/tcp
 #sudo sed -i '/ufw-before-input.*icmp/s/ACCEPT/DROP/g' /etc/ufw/before.rules
 
 sudo ufw enable
 
 sudo ufw status verbose
+sudo ufw status numbered
 cat /var/log/ufw.log
 # sudo ufw disable
 
