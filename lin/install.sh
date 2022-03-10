@@ -53,6 +53,7 @@ sudo ufw default allow outgoing
 sudo ufw allow ssh
 sudo ufw allow http
 sudo ufw allow https
+sudo ufw allow 1234/tcp
 #sudo ufw delete allow 22/tcp
 #sudo sed -i '/ufw-before-input.*icmp/s/ACCEPT/DROP/g' /etc/ufw/before.rules
 
@@ -64,6 +65,8 @@ cat /var/log/ufw.log
 # sudo ufw disable
 
 #sudo sed -i -E 's/#?PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
+# /etc/ssh/sshd_config
+# Port 1234
 
 # # fp
 # sudo apt install libfprint-2-tod1
