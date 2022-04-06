@@ -111,7 +111,7 @@ gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward ["'<
 gsettings set org.gnome.nautilus.preferences default-folder-viewer "list-view"
 gsettings set org.gnome.nautilus.preferences show-image-thumbnails "never"
 gsettings set org.gnome.nautilus.list-view default-zoom-level "small"
-gsettings set org.gnome.nautilus.list-view default-visible-columns ["'name', 'size', 'owner', 'group', 'permissions', 'date_accessed'"]
+gsettings set org.gnome.nautilus.list-view default-visible-columns ["'name', 'size', 'owner', 'group', 'permissions', 'date_modified', 'date_created'"]
 # gsettings set org.freedesktop.ibus.general.hotkey trigger []
 # gsettings set org.freedesktop.ibus.general.hotkey triggers []
 
