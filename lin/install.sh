@@ -50,11 +50,11 @@ apt purge \
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 
-sudo ufw allow ssh
+#sudo ufw allow ssh
 sudo ufw allow http
 sudo ufw allow https
 sudo ufw allow 1234/tcp
-#sudo ufw delete allow 22/tcp
+#sudo ufw delete allow 1234/tcp
 #sudo sed -i '/ufw-before-input.*icmp/s/ACCEPT/DROP/g' /etc/ufw/before.rules
 
 sudo ufw enable
@@ -64,9 +64,9 @@ sudo ufw status numbered
 cat /var/log/ufw.log
 # sudo ufw disable
 
-#sudo sed -i -E 's/#?PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
 # /etc/ssh/sshd_config
 # Port 1234
+# PasswordAuthentication no
 
 # # fp
 # sudo apt install libfprint-2-tod1
@@ -78,10 +78,6 @@ cat /var/log/ufw.log
 # /etc/default/keyboard
 XKBOPTIONS="ctrl:nocaps"
 sudo dpkg-reconfigure keyboard-configuration
-
-# sudo systemctl disable sssd
-# sudo systemctl disable openvpn
-# # systemctl disable cups.service cups.socket cups.path cups-browsed.service
 
 # extensions
 # cd /usr/share/glib-2.0 && glib-compile-schemas .

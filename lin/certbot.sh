@@ -13,8 +13,8 @@ sudo certbot certonly \
 # LE *
 sudo certbot certonly \
   --manual \
-  -d *.sub.example.com \
-  -d sub.example.com
+  -d sub.example.com \
+  -d *.sub.example.com
 
 # CF *
 # sudo snap install certbot-dns-cloudflare
@@ -22,5 +22,5 @@ sudo certbot certonly \
   --dns-cloudflare \
   --dns-cloudflare-credentials cloudflare.ini \
   --preferred-challenges dns-01 \
-  -d *.sub.example.com \
-  -d sub.example.com
+  -d sub.example.com \
+  -d *.sub.example.com
