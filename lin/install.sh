@@ -40,7 +40,8 @@ apt purge \
   ubuntu-report \
   popularity-contest \
   apport \
-  whoopsie
+  whoopsie \
+  gnome-remote-desktop
 
 # apt purge cups cups-common
 # sudo apt purge snapd gnome-software-plugin-snap
