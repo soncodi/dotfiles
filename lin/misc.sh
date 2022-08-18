@@ -22,6 +22,7 @@
 # cd /usr/share/glib-2.0 && glib-compile-schemas .
 # /usr/share/gnome-shell/extensions
 # /usr/share/glib-2.0/schemas
+# /usr/share/gnome-shell/modes/ubuntu.json
 # ~/.local/share/gnome-shell/extensions
 # ~/.local/share/glib-2.0/schemas
 
