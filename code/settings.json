@@ -86,5 +86,8 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  }
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.enableExperiments": false,
+  "update.showReleaseNotes": false
 }
