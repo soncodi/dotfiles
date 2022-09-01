@@ -30,11 +30,9 @@ apt purge \
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 
-#sudo ufw allow ssh
-sudo ufw allow http
-sudo ufw allow https
-sudo ufw allow 1234/tcp
-#sudo ufw delete allow 1234/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+#sudo ufw delete allow 443/tcp
 #sudo sed -i '/ufw-before-input.*icmp/s/ACCEPT/DROP/g' /etc/ufw/before.rules
 
 sudo ufw enable
