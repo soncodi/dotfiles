@@ -24,8 +24,9 @@ apt purge \
   whoopsie \
   ubuntu-advantage-tools \
   printer-driver-* \
-  cups* \
-  gnome-remote-desktop
+  cups*
+
+# apt purge gnome-remote-desktop
 
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
