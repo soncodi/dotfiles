@@ -89,5 +89,6 @@
   },
   "diffEditor.ignoreTrimWhitespace": false,
   "workbench.enableExperiments": false,
-  "update.showReleaseNotes": false
+  "update.showReleaseNotes": false,
+  "explorer.confirmUndo": "verbose"
 }
