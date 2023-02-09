@@ -10,6 +10,7 @@
   "editor.roundedSelection": false,
   "editor.rulers": [80],
   "editor.snippetSuggestions": "top",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.tabSize": 2,
   "editor.wordWrapColumn": 300,
   "editor.wrappingIndent": "indent",
@@ -76,7 +77,7 @@
   "workbench.editor.untitled.hint": "hidden",
   "workbench.startupEditor": "none",
   "security.workspace.trust.untrustedFiles": "newWindow",
-  "eslint.alwaysShowStatus": true,
+  "eslint.ignoreUntitled": true,
   "eslint.format.enable": true,
   "[typescript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
