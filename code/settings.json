@@ -21,15 +21,13 @@
 
   "files.exclude": {
     "**/.git": true,
-    "**/jspm_packages": true,
     "**/node_modules": true
   },
   "files.trimTrailingWhitespace": true,
 
   "search.exclude": {
     "**/.git": true,
-    "**/node_modules": true,
-    "**/jspm_packages": true
+    "**/node_modules": true
   },
 
   "telemetry.telemetryLevel": "off",
@@ -51,8 +49,6 @@
   "breadcrumbs.enabled": false,
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
-
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "window.titleBarStyle": "custom",
   "window.enableMenuBarMnemonics": false,
   "window.customMenuBarAltFocus": false,
