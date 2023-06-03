@@ -23,8 +23,11 @@ apt purge \
   apport \
   whoopsie \
   ubuntu-advantage-tools \
-  printer-driver-* \
-  cups*
+  sosreport
+
+# apt purge \
+#   printer-driver-* \
+#   cups*
 
 # apt purge gnome-remote-desktop
 
@@ -54,6 +57,10 @@ sudo dpkg-reconfigure keyboard-configuration
 
 # remove emoji input
 ibus-setup
+
+# disable gpu
+sudo prime-select intel
+# sudo prime-select nvidia
 
 # misc
 gsettings set org.gnome.desktop.interface enable-animations false
