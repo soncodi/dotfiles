@@ -191,5 +191,15 @@
     "key": "ctrl+alt+a",
     "command": "wwm.aligncode",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+1",
+    "command": "workbench.action.compareEditor.previousChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "ctrl+2",
+    "command": "workbench.action.compareEditor.nextChange",
+    "when": "textCompareEditorVisible"
   }
 ]
