@@ -141,6 +141,11 @@
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
   {
+    "key": "alt+shift+s",
+    "command": "editor.action.goToReferences",
+    "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  {
     "key": "alt+a",
     "command": "workbench.action.navigateBack"
   },
