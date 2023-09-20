@@ -80,7 +80,6 @@ gsettings set org.gnome.nautilus.list-view default-visible-columns ["'name', 'si
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 npm config set save-prefix='~'
-npm config set send-metrics=false
 
 # # ttf
 # apt install ttf-mscorefonts-installer
