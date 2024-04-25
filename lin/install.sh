@@ -20,13 +20,16 @@ apt purge \
   popularity-contest \
   apport \
   whoopsie \
-  ubuntu-advantage-tools \
-  sosreport
+  unattended-upgrades \
+  sosreport \
+  ubuntu-advantage-tools
 
 # apt purge \
 #   gnome-remote-desktop \
 #   printer-driver-* \
 #   cups*
+
+# sudo dpkg-reconfigure unattended-upgrades
 
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
@@ -90,7 +93,7 @@ npm config set save-prefix='~'
 # sudo mkdir /opt/p4v
 # sudo mv * /opt/p4v
 # sudo ln -s /opt/p4v/bin/p4merge /usr/local/bin/p4merge
-# apt install libxcb-xinerama0
+# sudo apt install libxcb-cursor0
 
 # # FF playback
 # apt install libavcodec-extra
