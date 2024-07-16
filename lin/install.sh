@@ -15,6 +15,7 @@ apt install \
   chrome-gnome-shell
 
 apt purge \
+  modemmanager \
   kerneloops \
   ubuntu-report \
   popularity-contest \
@@ -64,10 +65,11 @@ gsettings set org.gnome.desktop.peripherals.keyboard delay 275
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 10
 gsettings set org.gnome.desktop.peripherals.mouse accel-profile "flat"
 gsettings set org.gnome.desktop.peripherals.mouse double-click 200
-gsettings set org.gnome.desktop.peripherals.touchpad click-method "fingers"
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
-gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
-gsettings set org.gnome.desktop.peripherals.touchpad two-finger-scrolling-enabled true
+# gsettings set org.gnome.desktop.peripherals.touchpad click-method "fingers"
+# gsettings set org.gnome.desktop.peripherals.touchpad accel-profile "flat"
+# gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
+# gsettings set org.gnome.desktop.peripherals.touchpad two-finger-scrolling-enabled true
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu []
 gsettings set org.gnome.desktop.wm.keybindings switch-windows []
 gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward []
