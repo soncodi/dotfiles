@@ -7,3 +7,5 @@ set expandtab
 set paste
 
 syntax on
+
+set mouse-=a
