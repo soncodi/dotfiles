@@ -5,8 +5,7 @@ apt install \
   htop \
   git \
   vim \
-  byobu \
-  fail2ban
+  byobu
 
 apt install \
   gparted \
@@ -34,15 +33,11 @@ apt purge \
 
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
-sudo ufw allow 80/tcp
-sudo ufw allow 443/tcp
-#sudo ufw delete allow 443/tcp
+sudo ufw allow 22/tcp
 #sudo sed -i '/ufw-before-input.*icmp/s/ACCEPT/DROP/g' /etc/ufw/before.rules
 sudo ufw enable
-# sudo ufw disable
 sudo ufw status verbose
 sudo ufw status numbered
-cat /var/log/ufw.log
 
 # /etc/ssh/sshd_config
 # Port 1234
