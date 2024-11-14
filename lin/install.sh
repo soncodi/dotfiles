@@ -1,28 +1,31 @@
 
 apt install \
   curl \
-  build-essential \
   htop \
   git \
   vim \
-  byobu
+  byobu \
+  build-essential
 
 apt install \
   gparted \
   dconf-editor \
   gnome-tweaks \
-  chrome-gnome-shell
+  chrome-gnome-shell \
+  fonts-ubuntu
 
 apt purge \
   modemmanager \
   kerneloops \
-  ubuntu-report \
   popularity-contest \
   apport \
   whoopsie \
   unattended-upgrades \
-  sosreport \
-  ubuntu-advantage-tools
+  sosreport
+
+# apt purge \
+#   ubuntu-report \
+#   ubuntu-advantage-tools
 
 # apt purge \
 #   gnome-remote-desktop \
