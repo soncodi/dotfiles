@@ -119,3 +119,7 @@ npm config set save-prefix='~'
 # # /etc/udev/rules.d/51-android.rules
 # sudo usermod -aG plugdev $LOGNAME
 
+# # macbook
+# sudo apt install -y linux-headers-amd64 broadcom-sta-dkms # BCM4360 wifi
+# sudo apt install nvidia-tesla-470-driver
+
