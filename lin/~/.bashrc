@@ -5,4 +5,4 @@ alias ll='ls -alhF'
 
 stty -ixon
 
-export PATH="$HOME/.npm-global/bin:$PATH"
+# export PATH="$HOME/.npm-global/bin:$PATH"
